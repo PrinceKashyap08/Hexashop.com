@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* -------------------- Classes-style --------------------- */ 
+$gray-dark: #343a40;
+$gray: #6c757d;
+$dark: #343a40;
+$white: #ffffff;
+
+a{
+    text-decoration: none;
+} 
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+@mixin d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin max-width{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+/* -------------------- Classes-style --------------------- */ 
+
+
+// --blue: #007bff;
+// --indigo: #6610f2;
+// --purple: #6f42c1;
+// --pink: #e83e8c;
+// --red: #dc3545;
+// --orange: #fd7e14;
+// --yellow: #ffc107;
+// --green: #28a745;
+// --teal: #20c997;
+// --cyan: #17a2b8;
+// --white: #fff;
+// --primary: #007bff;
+// --secondary: #6c757d;
+// --success: #28a745;
+// --info: #17a2b8;
+// --warning: #ffc107;
+// --danger: #dc3545;
+// --light: #f8f9fa;

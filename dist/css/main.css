@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* -------------------- Classes-style --------------------- */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* -------------------- Classes-style --------------------- */
+/* ------------------ header_Hero ------------------------- */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+  border-bottom: 3px dotted #eee;
+}
+header .navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+}
+header .navbar .nav-menu {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+header .navbar .nav-menu a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2a2a2a;
+}
+header .navbar .nav-menu a:hover, header .navbar .nav-menu a.active {
+  color: #a1a1a1;
+}
+
+/* ------------------ header_Hero ------------------------- */
+/* ------------------ Contact_Hero ------------------------- */
+.Contact_Hero {
+  position: relative;
+  width: 100%;
+  padding: 100px 0;
+  top: 70px;
+}
+.Contact_Hero img {
+  width: 100%;
+  height: 450px;
+}
+.Contact_Hero .Contact_Hero_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.Contact_Hero .Contact_Hero_container h1 {
+  font-size: 5rem;
+  color: #ffffff;
+}
+.Contact_Hero .Contact_Hero_container p {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+/* ------------------ /Contact_Hero_style ------------------------- */
+/* ------------------ ContactUs_style ------------------------- */
+.contactUs {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  border-bottom: 3px dotted #eee;
+}
+.contactUs .contactUs-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 70px;
+}
+.contactUs .contactUs-container .containerLeft {
+  height: 100%;
+}
+.contactUs .contactUs-container .containerLeft iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+}
+.contactUs .contactUs-container .containerRight h2 {
+  font-size: 3rem;
+}
+.contactUs .contactUs-container .containerRight p {
+  font-size: 1.4rem;
+  color: #6c757d;
+}
+.contactUs .contactUs-container .contactUs-form {
+  padding-top: 30px;
+}
+.contactUs .contactUs-container .contactUs-form form .formBox-50 {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.contactUs .contactUs-container .contactUs-form form .formBox-50 input {
+  width: 100%;
+  padding: 12px 10px;
+  color: #000;
+}
+.contactUs .contactUs-container .contactUs-form form .formBox-50 input::-moz-placeholder {
+  color: #000;
+  font-weight: 500;
+}
+.contactUs .contactUs-container .contactUs-form form .formBox-50 input:-ms-input-placeholder {
+  color: #000;
+  font-weight: 500;
+}
+.contactUs .contactUs-container .contactUs-form form .formBox-50 input::placeholder {
+  color: #000;
+  font-weight: 500;
+}
+.contactUs .contactUs-container .contactUs-form form .formBox-100 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.contactUs .contactUs-container .contactUs-form form .formBox-100 textarea {
+  width: 100%;
+  padding: 12px 15px;
+  resize: none;
+}
+.contactUs .contactUs-container .contactUs-form form .formBox-100 textarea::-moz-placeholder {
+  color: #000;
+  font-weight: 500;
+}
+.contactUs .contactUs-container .contactUs-form form .formBox-100 textarea:-ms-input-placeholder {
+  color: #000;
+  font-weight: 500;
+}
+.contactUs .contactUs-container .contactUs-form form .formBox-100 textarea::placeholder {
+  color: #000;
+  font-weight: 500;
+}
+.contactUs .contactUs-container .contactUs-form form .contact-btn {
+  width: 45px;
+  height: 45px;
+  color: #ffffff;
+  border: none;
+  background-color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.contactUs .contactUs-container .contactUs-form form .contact-btn:hover {
+  color: #000;
+  background-color: #ffffff;
+  border: 1px solid #000;
+}
+.contactUs .contactUs-container .contactUs-form form .contact-btn i {
+  font-size: 1.4rem;
+}
+
+/* ------------------ /ContactUs_style ------------------------- */
+/* ------------------ Subscribe_style ------------------------- */
+.Subscribe {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+}
+.Subscribe .Subscribe-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 30px;
+}
+.Subscribe .Subscribe-container .subscribe-items h2 {
+  width: 95%;
+  font-size: 3rem;
+  color: #2a2a2a;
+}
+.Subscribe .Subscribe-container .subscribe-items p {
+  font-size: 1.4rem;
+  color: #a1a1a1;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.Subscribe .Subscribe-container .subscribe-items form {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.2fr;
+  gap: 30px;
+}
+.Subscribe .Subscribe-container .subscribe-items form input {
+  padding: 12px 10px;
+  font-size: 1.4rem;
+}
+.Subscribe .Subscribe-container .subscribe-items form input::-moz-placeholder {
+  color: #2a2a2a;
+}
+.Subscribe .Subscribe-container .subscribe-items form input:-ms-input-placeholder {
+  color: #2a2a2a;
+}
+.Subscribe .Subscribe-container .subscribe-items form input::placeholder {
+  color: #2a2a2a;
+}
+.Subscribe .Subscribe-container .subscribe-items form button {
+  width: 45px;
+  height: 45px;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.Subscribe .Subscribe-container .subscribe-items form button:hover {
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(2) {
+  margin-left: 50px;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(2) ul li {
+  padding-bottom: 15px;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(2) ul li h3 {
+  font-size: 1.6rem;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(2) ul li p {
+  font-size: 1.5rem;
+  color: #a1a1a1;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(3) {
+  margin-left: 10px;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(3) ul li {
+  padding-bottom: 25px;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(3) ul li h3 {
+  font-size: 1.6rem;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(3) ul li h3 ul {
+  display: -ms-flexbox;
+  display: flex;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(3) ul li p {
+  font-size: 1.5rem;
+  color: #a1a1a1;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(3) ul li:nth-child(3) {
+  padding-bottom: 8px;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(3) .social-Link {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
+  gap: 3px;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(3) .social-Link li {
+  padding-bottom: 0;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(3) .social-Link li a {
+  font-size: 1.4rem;
+  color: #a1a1a1;
+  transition: 0.3s ease;
+}
+.Subscribe .Subscribe-container .subscribe-items:nth-child(3) .social-Link li a:hover {
+  color: #000;
+}
+
+/* ------------------ /Subscribe_style ------------------------- */
+/* ------------------ Footer_style ------------------------- */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #2a2a2a;
+  padding: 60px 0 30px 0;
+}
+footer .footer-top {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+footer .footer-top .footer-info {
+  padding-top: 30px;
+}
+footer .footer-top .footer-info p {
+  font-size: 1.4rem;
+  color: #eee;
+  padding-bottom: 15px;
+}
+footer .footer-top .footer-link .footer-title {
+  padding-bottom: 30px;
+}
+footer .footer-top .footer-link .footer-title h3 {
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+footer .footer-top .footer-link ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 10px;
+}
+footer .footer-top .footer-link ul a {
+  font-size: 1.4rem;
+  color: #eee;
+  transition: all 0.5s ease;
+}
+footer .footer-top .footer-link ul a:hover {
+  color: #a1a1a1;
+}
+footer .footer-bottom {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  padding-top: 30px;
+}
+footer .footer-bottom .footer-line {
+  border: 1px solid rgba(250, 250, 250, 0.3);
+  height: 1px;
+  width: 100%;
+}
+footer .footer-bottom .footer-bottom-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+  height: 100px;
+  padding-top: 25px;
+}
+footer .footer-bottom .footer-bottom-container p {
+  font-size: 1.5rem;
+  color: #eee;
+}
+footer .footer-bottom .footer-bottom-container ul {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+footer .footer-bottom .footer-bottom-container ul li {
+  font-size: 2rem;
+  color: #eee;
+  color: #cff;
+  transition: 0.3s ease;
+}
+footer .footer-bottom .footer-bottom-container ul li:hover {
+  color: brown;
+}
+
+/* ------------------ /Footer_style ------------------------- *//*# sourceMappingURL=main.css.map */
