@@ -64,6 +64,173 @@ header .navbar .nav-menu a:hover, header .navbar .nav-menu a.active {
   color: #a1a1a1;
 }
 
+/* ------------------ /header_Hero ------------------------- */
+/* ------------------ banner_style ------------------------- */
+.banner {
+  width: 100%;
+  padding-top: 160px;
+  padding-bottom: 30px;
+  padding-bottom: 50px;
+  border-bottom: 3px dotted #eee;
+}
+.banner .banner-container {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 400px 400px;
+  grid-template-areas: "L L L L L L O O O T T T" "L L L L L L F F F S S S";
+  gap: 30px;
+}
+.banner .banner-container .Left {
+  grid-area: L;
+  background-color: red;
+  position: relative;
+}
+.banner .banner-container .Left .bannerLeft-info {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+.banner .banner-container .Left .bannerLeft-info h1 {
+  font-size: 5rem;
+  color: #ffffff;
+}
+.banner .banner-container .Left .bannerLeft-info p {
+  font-size: 1.6rem;
+  color: #eee;
+  padding-bottom: 40px;
+}
+.banner .banner-container .Left .bannerLeft-info .banner-btn {
+  padding: 12px 20px;
+  font-size: 1.4rem;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: 0.5s ease;
+  border-radius: 5px;
+}
+.banner .banner-container .Left .bannerLeft-info .banner-btn:hover {
+  color: #2a2a2a;
+  background-color: #ffffff;
+}
+.banner .banner-container .One {
+  grid-area: O;
+  background-color: rgb(206, 163, 163);
+}
+.banner .banner-container .Two {
+  grid-area: T;
+  background-color: rgb(108, 117, 242);
+}
+.banner .banner-container .Four {
+  grid-area: F;
+  background-color: rgb(99, 208, 241);
+}
+.banner .banner-container .Six {
+  grid-area: S;
+  background-color: rgb(186, 227, 109);
+}
+.banner .banner-container .banner-items {
+  position: relative;
+  transition: 0.5s;
+}
+.banner .banner-container .banner-items:hover .banner-overlay {
+  visibility: visible;
+}
+.banner .banner-container .banner-items .banner-info {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  text-align: center;
+}
+.banner .banner-container .banner-items .banner-info h3 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+.banner .banner-container .banner-items .banner-info p {
+  font-size: 1.6rem;
+  color: #eee;
+}
+.banner .banner-container .banner-items .banner-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 90%;
+  height: 90%;
+  margin: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: rgba(42, 42, 42, 0.97);
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.banner .banner-container .banner-items .banner-overlay h3 {
+  font-size: 2.2rem;
+  color: #eee;
+  padding-bottom: 5px;
+}
+.banner .banner-container .banner-items .banner-overlay p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #eee;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.banner .banner-container .banner-items .banner-overlay .ban-btn {
+  font-size: 1.4rem;
+  color: #eee;
+  padding: 12px 22px;
+  border: 1px solid #ffffff;
+}
+.banner .banner-container .banner-items .banner-overlay .ban-btn:hover {
+  color: #2a2a2a;
+  background-color: #ffffff;
+}
+
+/* ------------------ /banner_style ------------------------- */
+/* ------------------ Media_style ------------------------- */
+/* ------------------ header_Hero ------------------------- */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+  border-bottom: 3px dotted #eee;
+}
+header .navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100%;
+}
+header .navbar .nav-menu {
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+header .navbar .nav-menu a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #2a2a2a;
+}
+header .navbar .nav-menu a:hover, header .navbar .nav-menu a.active {
+  color: #a1a1a1;
+}
+
 /* ------------------ header_Hero ------------------------- */
 /* ------------------ Contact_Hero ------------------------- */
 .Contact_Hero {
