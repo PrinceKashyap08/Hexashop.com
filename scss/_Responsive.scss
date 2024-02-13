@@ -1,3 +1,20 @@
+/* -------------------- /max-width:1208px ---------------------- */
+@media(max-width:1200px) {
+    .banner{
+        .banner-container{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 600px 400px 400px;
+            grid-template-areas: 
+            'h h h h h h h h h h h h'
+            'w w w w w w m m m m m m'
+            'K K K K K K A A A A A A';
+        }
+    }
+}
+
+/* -------------------- /max-width:1200px ---------------------- */
+
 /* -------------------- max-width:992px ---------------------- */
 @media(max-width:992px) {
     .header {
@@ -9,7 +26,8 @@
                 width: 100%;
                 padding: 30px 30px;
                 flex-direction: column;
-                background-color: #13131308;
+                background-color: #F6F6F6;
+                z-index: 10000;
                 
                 &.active {
                     left: 0;
@@ -52,28 +70,28 @@
             }
         }
     }
-}
-.hamburger.active .line:nth-child(2){
-    background-color: transparent;
-}
-.hamburger.active .line:nth-child(1){
-    transform: translateY(11px) rotate(45deg);
-}
-.hamburger.active .line:nth-child(3){
-    transform: translateY(-7px) rotate(-45deg);
-}
-#show-menu:checked~.drop-menu {
-    max-height: 100%;
-    margin-top: 20px;
-    transition: none;
-}
-
-#show-menu:checked~.drop-menu {
-    max-height: 100%;
-}
-
-#show-menu:checked~.mobile-menu i {
-    content: '\f106';
+    .hamburger.active .line:nth-child(2){
+        background-color: transparent;
+    }
+    .hamburger.active .line:nth-child(1){
+        transform: translateY(11px) rotate(45deg);
+    }
+    .hamburger.active .line:nth-child(3){
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    #show-menu:checked~.drop-menu {
+        max-height: 100%;
+        margin-top: 20px;
+        transition: none;
+    }
+    
+    #show-menu:checked~.drop-menu {
+        max-height: 100%;
+    }
+    
+    #show-menu:checked~.mobile-menu i {
+        content: '\f106';
+    }
 }
 
 /* -------------------- /max-width:992px ---------------------- */
@@ -95,6 +113,20 @@
                     }
                 }
             }
+        }
+    }
+
+    .banner{
+        .banner-container{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(5,600PX);
+            grid-template-areas: 
+            'h h h h h h h h h h h h'
+            'w w w w w w w w w w w w'
+            'm m m m m m m m m m m m'
+            'K K K K K K K K K K K K'
+            'A A A A A A A A A A A A';
         }
     }
 }
