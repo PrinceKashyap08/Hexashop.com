@@ -1,230 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/dist/css/main.css">
-    <title>Hexashop.com</title>
+    <title>Hexashop.in</title>
 </head>
-
 <body>
-    <!-- ------------------------- header_section ------------------------- -->
+    <!-- ------------------- header-section -------------------- -->
     <header class="header">
         <nav class="navbar">
             <div class="logo">
-                <a href="#"><img src="/image/logo.png" alt="logo image"></a>
+                <a href="index.html"><img src="/image/logo.png" alt="logo-image"></a>
             </div>
             <ul class="nav-menu">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Men's</a></li>
                 <li><a href="#">Women's</a></li>
                 <li><a href="#">Kid's</a></li>
-                <li><a href="#">Pages</a></li>
+                <li><a href="#" class="desktop-menu">Pages <i class="fa fa-angle-down"></i></a>
+                    <input type="checkbox" name="" id="show-menu">
+                    <label for="show-menu" class="mobile-menu">Pages <i class="fa fa-angle-down"></i></label>
+                    <ul class="drop-menu">
+                        <li><a href="/Pages/about.html">About Us</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Single Product</a></li>
+                        <li><a href="/Pages/contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Features</a></li>
                 <li><a href="#">Explore</a></li>
             </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
     </header>
-    <!-- ------------------------- /header_section ------------------------- -->
+    <!-- ------------------- /header-section -------------------- -->
 
-    <!-- ------------------------- Main_section ------------------------- -->
     <main>
-        <!-- ------------------------- banner_section ------------------------- -->
+        <!-- ------------------- banner-section -------------------- -->
         <section class="banner">
-            <div class="banner-container">
-                <div class="banner-items Left">
-                    <img src="/image/left-banner-image.jpg" alt="">
-                    <div class="bannerLeft-info">
-                        <h1>We Are Hexashop</h1>
-                        <p>Awesome, clean & creative HTML% Template</p>
-                        <a href="#" class="banner-btn">Purchase Now!</a>
-                    </div>
-                </div>
-                <div class="banner-items One">
-                    <img src="/image/baner-right-image-01.jpg" alt="">
-                    <div class="banner-info">
-                        <h3>Women</h3>
-                        <p>Best Clothes For Women</p>
-                    </div>
-                    <div class="banner-overlay">
-                        <h3>Women</h3>
-                        <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
-                        <a href="#" class="ban-btn">Discover more</a>
-                    </div>
-                </div>
-                <div class="banner-items Two">
-                    <img src="/image/baner-right-image-02.jpg" alt="">
-                    <div class="banner-info">
-                        <h3>Men</h3>
-                        <p>Best Clothes For Men</p>
-                    </div>
-                    <div class="banner-overlay">
-                        <h3>Men</h3>
-                        <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
-                        <a href="#" class="ban-btn">Discover more</a>
-                    </div>
-                </div>
-                <div class="banner-items Four">
-                    <img src="/image/baner-right-image-03.jpg" alt="">
-                    <div class="banner-info">
-                        <h3>Kiids</h3>
-                        <p>Best Clothes For Kids</p>
-                    </div>
-                    <div class="banner-overlay">
-                        <h3>Kids</h3>
-                        <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
-                        <a href="#" class="ban-btn">Discover more</a>
-                    </div>
-                </div>
-                <div class="banner-items Six">
-                    <img src="/image/baner-right-image-04.jpg" alt="">
-                    <div class="banner-info">
-                        <h3>Accessories</h3>
-                        <p>Best friend Accessories</p>
-                    </div>
-                    <div class="banner-overlay">
-                        <h3>Accessories</h3>
-                        <p>Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid.</p>
-                        <a href="#" class="ban-btn">Discover more</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ------------------------- /banner_section ------------------------- -->
 
-        <!-- ------------------------- Media_section ------------------------- -->
-        <section class="media">
-            <div class="media-title">
-                <h2>Social Media</h2>
-                <p>Details to details is what makes Hexashop different from the other themes.</p>
-            </div>
-            <div class="media-container"></div>
         </section>
-        <!-- ------------------------- /Media_section ------------------------- -->
-
-        <!-- ------------------------- Subscribe_section ------------------------- -->
-        <section class="Subscribe">
-            <div class="Subscribe-container">
-                <div class="subscribe-items">
-                    <h2>By Subscribing To Our Newsletter You Can Get 30% Off</h2>
-                    <p>Details to details is what makes Hexashop different from the other themes.</p>
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="text" placeholder="Your Email Address" required>
-                        <button type="submit"><i class="fa fa-paper-plane"></i></button>
-                    </form>
-                </div>
-                <div class="subscribe-items">
-                    <ul>
-                        <li>
-                            <h3>Store Location:</h3>
-                            <p>Sunny Isles Beach, FL 33160, United States
-                            </p>
-                        </li>
-                        <li>
-                            <h3>Phone:</h3>
-                            <p>010-020-0340</p>
-                        </li>
-                        <li>
-                            <h3>Office Location:</h3>
-                            <p>North Miami Beach</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="subscribe-items">
-                    <ul>
-                        <li>
-                            <h3>Work Hours:</h3>
-                            <p>07:30 AM - 9:30 PM Daily
-                            </p>
-                        </li>
-                        <li>
-                            <h3>Email:</h3>
-                            <p>info@company.com</p>
-                        </li>
-                        <li>
-                            <h3>Social Media:</h3>
-                        </li>
-                    </ul>
-                    <ul class="social-Link">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Behance</a></li>
-                        <li><a href="#">Linkedin</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- ------------------------- /Subscribe_section ------------------------- -->
+        <!-- ------------------- /banner-section -------------------- -->
     </main>
-    <!-- ------------------------- /Main_section ------------------------- -->
 
-    <!-- ------------------------- Footer_section ------------------------- -->
-    <footer>
-        <div class="footer-top">
-            <div class="footer-about">
-                <div class="footer-img">
-                    <img src="/image/white-logo.png" alt="footer logo image">
-                </div>
-                <div class="footer-info">
-                    <p>16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</p>
-                    <p>hexashop@company.com</p>
-                    <p>010-020-0340</p>
-                </div>
-            </div>
-            <div class="footer-link">
-                <div class="footer-title">
-                    <h3>Shopping & Categoies</h3>
-                </div>
-                <ul>
-                    <li><a href="#">Men's Shopping</a></li>
-                    <li><a href="#">Women's Shopping</a></li>
-                    <li><a href="#">Kid's Shopping</a></li>
-                </ul>
-            </div>
-            <div class="footer-link">
-                <div class="footer-title">
-                    <h3>Useful Links</h3>
-                </div>
-                <ul>
-                    <li><a href="#">Homepage</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-link">
-                <div class="footer-title">
-                    <h3>Help & information</h3>
-                </div>
-                <ul>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">FAQ's</a></li>
-                    <li><a href="#">Shipping</a></li>
-                    <li><a href="#">Tracking ID</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-line">
-            </div>
-            <div class="footer-bottom-container">
-                <p>Copyright ©<span id="currentYear"></span> HexaShop Co., Ltd. All Rights Reserved.</p>
-                <ul>
-                    <li><i class="fa fa-facebook"></i></li>
-                    <li><i class="fa fa-twitter"></i></li>
-                    <li><i class="fa fa-linkedin"></i></li>
-                    <li><i class="fa fa-behance"></i></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <!-- ------------------------- /Footer_section ------------------------- -->
+    <!-- ------------------- footer-section -------------------- -->
+
+    <!-- ------------------- footer-section -------------------- -->
 
     <script src="https://kit.fontawesome.com/edcd5c8c16.js"></script>
-    <script src="Main.js"></script>
-
+    <script src="/Javascript/Main.js"></script>
 </body>
-
 </html>

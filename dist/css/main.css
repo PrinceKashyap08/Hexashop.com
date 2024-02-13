@@ -30,12 +30,11 @@ img {
 /* -------------------- Classes-style --------------------- */
 /* ------------------ header_Hero ------------------------- */
 header {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100px;
-  z-index: 1000;
   border-bottom: 3px dotted #eee;
 }
 header .navbar {
@@ -50,510 +49,214 @@ header .navbar {
       align-items: center;
   height: 100%;
 }
+header .navbar input {
+  display: none;
+}
+header .navbar .logo img {
+  width: 150px;
+}
 header .navbar .nav-menu {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-header .navbar .nav-menu a {
+header .navbar .nav-menu li {
+  position: relative;
+}
+header .navbar .nav-menu li:hover .drop-menu {
+  visibility: initial;
+  opacity: 1;
+  top: 35px;
+}
+header .navbar .nav-menu li:hover a {
+  color: #a1a1a1;
+}
+header .navbar .nav-menu li a {
   font-size: 1.6rem;
   font-weight: 500;
   color: #2a2a2a;
+  transition: 0.3s;
 }
-header .navbar .nav-menu a:hover, header .navbar .nav-menu a.active {
+header .navbar .nav-menu li a:hover, header .navbar .nav-menu li a.active {
   color: #a1a1a1;
+}
+header .navbar .nav-menu .drop-menu {
+  position: absolute;
+  width: 200px;
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.08);
+  z-index: 100000;
+  top: 70px;
+  left: 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.031372549);
+  transition: 0.3s ease;
+}
+header .navbar .nav-menu .drop-menu li {
+  width: 100%;
+  padding: 10px 20px;
+}
+header .navbar .nav-menu .drop-menu li:hover {
+  background-color: #ffffff;
+}
+header .navbar .nav-menu .drop-menu li:hover a {
+  color: #a1a1a1;
+}
+header .navbar .nav-menu .drop-menu li a {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #2a2a2a;
+}
+header .navbar .nav-menu .mobile-menu {
+  display: none;
+}
+header .navbar .hamburger {
+  display: none;
+  cursor: pointer;
+}
+header .navbar .hamburger .line {
+  width: 35px;
+  height: 3px;
+  margin: 6px;
+  background-color: #2a2a2a;
 }
 
 /* ------------------ /header_Hero ------------------------- */
 /* ------------------ banner_style ------------------------- */
-.banner {
-  width: 100%;
-  padding-top: 160px;
-  padding-bottom: 30px;
-  padding-bottom: 50px;
-  border-bottom: 3px dotted #eee;
-}
-.banner .banner-container {
-  width: 95%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 400px 400px;
-  grid-template-areas: "L L L L L L O O O T T T" "L L L L L L F F F S S S";
-  gap: 30px;
-}
-.banner .banner-container .Left {
-  grid-area: L;
-  background-color: red;
-  position: relative;
-}
-.banner .banner-container .Left .bannerLeft-info {
-  position: absolute;
-  top: 40%;
-  left: 10%;
-}
-.banner .banner-container .Left .bannerLeft-info h1 {
-  font-size: 5rem;
-  color: #ffffff;
-}
-.banner .banner-container .Left .bannerLeft-info p {
-  font-size: 1.6rem;
-  color: #eee;
-  padding-bottom: 40px;
-}
-.banner .banner-container .Left .bannerLeft-info .banner-btn {
-  padding: 12px 20px;
-  font-size: 1.4rem;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  transition: 0.5s ease;
-  border-radius: 5px;
-}
-.banner .banner-container .Left .bannerLeft-info .banner-btn:hover {
-  color: #2a2a2a;
-  background-color: #ffffff;
-}
-.banner .banner-container .One {
-  grid-area: O;
-  background-color: rgb(206, 163, 163);
-}
-.banner .banner-container .Two {
-  grid-area: T;
-  background-color: rgb(108, 117, 242);
-}
-.banner .banner-container .Four {
-  grid-area: F;
-  background-color: rgb(99, 208, 241);
-}
-.banner .banner-container .Six {
-  grid-area: S;
-  background-color: rgb(186, 227, 109);
-}
-.banner .banner-container .banner-items {
-  position: relative;
-  transition: 0.5s;
-}
-.banner .banner-container .banner-items:hover .banner-overlay {
-  visibility: visible;
-}
-.banner .banner-container .banner-items .banner-info {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  text-align: center;
-}
-.banner .banner-container .banner-items .banner-info h3 {
-  font-size: 2.5rem;
-  color: #ffffff;
-}
-.banner .banner-container .banner-items .banner-info p {
-  font-size: 1.6rem;
-  color: #eee;
-}
-.banner .banner-container .banner-items .banner-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 90%;
-  height: 90%;
-  margin: 20px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  background-color: rgba(42, 42, 42, 0.97);
-  visibility: hidden;
-  transition: all 0.5s;
-}
-.banner .banner-container .banner-items .banner-overlay h3 {
-  font-size: 2.2rem;
-  color: #eee;
-  padding-bottom: 5px;
-}
-.banner .banner-container .banner-items .banner-overlay p {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  color: #eee;
-  text-align: center;
-  padding-bottom: 20px;
-}
-.banner .banner-container .banner-items .banner-overlay .ban-btn {
-  font-size: 1.4rem;
-  color: #eee;
-  padding: 12px 22px;
-  border: 1px solid #ffffff;
-}
-.banner .banner-container .banner-items .banner-overlay .ban-btn:hover {
-  color: #2a2a2a;
-  background-color: #ffffff;
-}
-
 /* ------------------ /banner_style ------------------------- */
-/* ------------------ Media_style ------------------------- */
-/* ------------------ header_Hero ------------------------- */
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  z-index: 1000;
-  border-bottom: 3px dotted #eee;
+/* -------------------- max-width:992px ---------------------- */
+@media (max-width: 992px) {
+  .header .navbar .nav-menu {
+    position: absolute;
+    top: 100px;
+    left: -100%;
+    width: 100%;
+    padding: 30px 30px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    background-color: rgba(19, 19, 19, 0.031372549);
+  }
+  .header .navbar .nav-menu.active {
+    left: 0;
+  }
+  .header .navbar .nav-menu li .drop-menu {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    max-height: 0;
+    transition: none;
+  }
+  .header .navbar .nav-menu li a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  }
+  .header .navbar .nav-menu li .desktop-menu {
+    display: none;
+  }
+  .header .navbar .nav-menu li .mobile-menu {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #2a2a2a;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    cursor: pointer;
+  }
+  .header .navbar .hamburger {
+    display: block;
+  }
 }
-header .navbar {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 100%;
-}
-header .navbar .nav-menu {
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-header .navbar .nav-menu a {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #2a2a2a;
-}
-header .navbar .nav-menu a:hover, header .navbar .nav-menu a.active {
-  color: #a1a1a1;
-}
-
-/* ------------------ header_Hero ------------------------- */
-/* ------------------ Contact_Hero ------------------------- */
-.Contact_Hero {
-  position: relative;
-  width: 100%;
-  padding: 100px 0;
-  top: 70px;
-}
-.Contact_Hero img {
-  width: 100%;
-  height: 450px;
-}
-.Contact_Hero .Contact_Hero_container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.Contact_Hero .Contact_Hero_container h1 {
-  font-size: 5rem;
-  color: #ffffff;
-}
-.Contact_Hero .Contact_Hero_container p {
-  color: #ffffff;
-  font-size: 1.6rem;
+.hamburger.active .line:nth-child(2) {
+  background-color: transparent;
 }
 
-/* ------------------ /Contact_Hero_style ------------------------- */
-/* ------------------ ContactUs_style ------------------------- */
-.contactUs {
-  width: 100%;
-  height: auto;
-  padding-top: 80px;
-  padding-bottom: 100px;
-  border-bottom: 3px dotted #eee;
-}
-.contactUs .contactUs-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 70px;
-}
-.contactUs .contactUs-container .containerLeft {
-  height: 100%;
-}
-.contactUs .contactUs-container .containerLeft iframe {
-  width: 100%;
-  height: 400px;
-  border: none;
-}
-.contactUs .contactUs-container .containerRight h2 {
-  font-size: 3rem;
-}
-.contactUs .contactUs-container .containerRight p {
-  font-size: 1.4rem;
-  color: #6c757d;
-}
-.contactUs .contactUs-container .contactUs-form {
-  padding-top: 30px;
-}
-.contactUs .contactUs-container .contactUs-form form .formBox-50 {
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-.contactUs .contactUs-container .contactUs-form form .formBox-50 input {
-  width: 100%;
-  padding: 12px 10px;
-  color: #000;
-}
-.contactUs .contactUs-container .contactUs-form form .formBox-50 input::-moz-placeholder {
-  color: #000;
-  font-weight: 500;
-}
-.contactUs .contactUs-container .contactUs-form form .formBox-50 input:-ms-input-placeholder {
-  color: #000;
-  font-weight: 500;
-}
-.contactUs .contactUs-container .contactUs-form form .formBox-50 input::placeholder {
-  color: #000;
-  font-weight: 500;
-}
-.contactUs .contactUs-container .contactUs-form form .formBox-100 {
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-.contactUs .contactUs-container .contactUs-form form .formBox-100 textarea {
-  width: 100%;
-  padding: 12px 15px;
-  resize: none;
-}
-.contactUs .contactUs-container .contactUs-form form .formBox-100 textarea::-moz-placeholder {
-  color: #000;
-  font-weight: 500;
-}
-.contactUs .contactUs-container .contactUs-form form .formBox-100 textarea:-ms-input-placeholder {
-  color: #000;
-  font-weight: 500;
-}
-.contactUs .contactUs-container .contactUs-form form .formBox-100 textarea::placeholder {
-  color: #000;
-  font-weight: 500;
-}
-.contactUs .contactUs-container .contactUs-form form .contact-btn {
-  width: 45px;
-  height: 45px;
-  color: #ffffff;
-  border: none;
-  background-color: #000;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-.contactUs .contactUs-container .contactUs-form form .contact-btn:hover {
-  color: #000;
-  background-color: #ffffff;
-  border: 1px solid #000;
-}
-.contactUs .contactUs-container .contactUs-form form .contact-btn i {
-  font-size: 1.4rem;
+.hamburger.active .line:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
 }
 
-/* ------------------ /ContactUs_style ------------------------- */
-/* ------------------ Subscribe_style ------------------------- */
-.Subscribe {
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
-}
-.Subscribe .Subscribe-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px;
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
-  gap: 30px;
-}
-.Subscribe .Subscribe-container .subscribe-items h2 {
-  width: 95%;
-  font-size: 3rem;
-  color: #2a2a2a;
-}
-.Subscribe .Subscribe-container .subscribe-items p {
-  font-size: 1.4rem;
-  color: #a1a1a1;
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-.Subscribe .Subscribe-container .subscribe-items form {
-  padding-top: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 0.2fr;
-  gap: 30px;
-}
-.Subscribe .Subscribe-container .subscribe-items form input {
-  padding: 12px 10px;
-  font-size: 1.4rem;
-}
-.Subscribe .Subscribe-container .subscribe-items form input::-moz-placeholder {
-  color: #2a2a2a;
-}
-.Subscribe .Subscribe-container .subscribe-items form input:-ms-input-placeholder {
-  color: #2a2a2a;
-}
-.Subscribe .Subscribe-container .subscribe-items form input::placeholder {
-  color: #2a2a2a;
-}
-.Subscribe .Subscribe-container .subscribe-items form button {
-  width: 45px;
-  height: 45px;
-  font-size: 1.5rem;
-  color: #fff;
-  background-color: #2a2a2a;
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-.Subscribe .Subscribe-container .subscribe-items form button:hover {
-  color: #000;
-  background-color: #fff;
-  cursor: pointer;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(2) {
-  margin-left: 50px;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(2) ul li {
-  padding-bottom: 15px;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(2) ul li h3 {
-  font-size: 1.6rem;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(2) ul li p {
-  font-size: 1.5rem;
-  color: #a1a1a1;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(3) {
-  margin-left: 10px;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(3) ul li {
-  padding-bottom: 25px;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(3) ul li h3 {
-  font-size: 1.6rem;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(3) ul li h3 ul {
-  display: -ms-flexbox;
-  display: flex;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(3) ul li p {
-  font-size: 1.5rem;
-  color: #a1a1a1;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(3) ul li:nth-child(3) {
-  padding-bottom: 8px;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(3) .social-Link {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 0;
-  gap: 3px;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(3) .social-Link li {
-  padding-bottom: 0;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(3) .social-Link li a {
-  font-size: 1.4rem;
-  color: #a1a1a1;
-  transition: 0.3s ease;
-}
-.Subscribe .Subscribe-container .subscribe-items:nth-child(3) .social-Link li a:hover {
-  color: #000;
+.hamburger.active .line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ------------------ /Subscribe_style ------------------------- */
-/* ------------------ Footer_style ------------------------- */
-footer {
-  width: 100%;
-  height: auto;
-  background-color: #2a2a2a;
-  padding: 60px 0 30px 0;
-}
-footer .footer-top {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-footer .footer-top .footer-info {
-  padding-top: 30px;
-}
-footer .footer-top .footer-info p {
-  font-size: 1.4rem;
-  color: #eee;
-  padding-bottom: 15px;
-}
-footer .footer-top .footer-link .footer-title {
-  padding-bottom: 30px;
-}
-footer .footer-top .footer-link .footer-title h3 {
-  font-size: 1.6rem;
-  color: #ffffff;
-}
-footer .footer-top .footer-link ul {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  gap: 10px;
-}
-footer .footer-top .footer-link ul a {
-  font-size: 1.4rem;
-  color: #eee;
-  transition: all 0.5s ease;
-}
-footer .footer-top .footer-link ul a:hover {
-  color: #a1a1a1;
-}
-footer .footer-bottom {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 30px;
-  padding-top: 30px;
-}
-footer .footer-bottom .footer-line {
-  border: 1px solid rgba(250, 250, 250, 0.3);
-  height: 1px;
-  width: 100%;
-}
-footer .footer-bottom .footer-bottom-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 100%;
-  height: 100px;
-  padding-top: 25px;
-}
-footer .footer-bottom .footer-bottom-container p {
-  font-size: 1.5rem;
-  color: #eee;
-}
-footer .footer-bottom .footer-bottom-container ul {
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  padding-top: 20px;
-}
-footer .footer-bottom .footer-bottom-container ul li {
-  font-size: 2rem;
-  color: #eee;
-  color: #cff;
-  transition: 0.3s ease;
-}
-footer .footer-bottom .footer-bottom-container ul li:hover {
-  color: brown;
+#show-menu:checked ~ .drop-menu {
+  max-height: 100%;
+  margin-top: 20px;
+  transition: none;
 }
 
-/* ------------------ /Footer_style ------------------------- *//*# sourceMappingURL=main.css.map */
+#show-menu:checked ~ .drop-menu {
+  max-height: 100%;
+}
+
+#show-menu:checked ~ .mobile-menu i {
+  content: "\f106";
+}
+
+/* -------------------- /max-width:992px ---------------------- */
+/* -------------------- /max-width:768px ---------------------- */
+@media (max-width: 768px) {
+  .header {
+    height: 80px;
+  }
+  .header .navbar {
+    padding: 0 20px;
+  }
+  .header .navbar .nav-menu {
+    top: 80px;
+    padding: 30px 20px;
+  }
+  .header .navbar .nav-menu li .mobile-menu {
+    font-size: 1.6rem;
+  }
+}
+/* -------------------- /max-width:768px ---------------------- */
+/* -------------------- /max-width:568px ---------------------- */
+@media (max-width: 568px) {
+  .header .navbar {
+    padding: 0 12px;
+  }
+  .header .navbar .logo img {
+    width: 140px;
+  }
+  .header .navbar .nav-menu {
+    padding: 30px 12px;
+  }
+  .header .navbar .nav-menu li .mobile-menu {
+    font-size: 1.4rem;
+  }
+  .header .navbar .nav-menu li a {
+    font-size: 1.4rem;
+  }
+}
+/* -------------------- /max-width:568px ---------------------- */
+/* -------------------- /max-width:378px ---------------------- */
+@media (max-width: 378px) {
+  .header {
+    height: 80px;
+  }
+  .header .navbar {
+    padding: 0 12px;
+  }
+  .header .navbar .logo img {
+    width: 120px;
+  }
+  .header .navbar .nav-menu {
+    top: 80px;
+    padding: 30px 12px;
+  }
+  .header .navbar .nav-menu li .mobile-menu {
+    font-size: 1.2rem;
+  }
+  .header .navbar .nav-menu li a {
+    font-size: 1.2rem;
+  }
+}
+/* -------------------- /max-width:568px ---------------------- *//*# sourceMappingURL=main.css.map */
