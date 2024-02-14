@@ -1,3 +1,10 @@
+// Pre Loader  
+const preloader = document.getElementById("loader");
+
+function myLoader(){
+    preloader.style.display = "none";
+};
+
 // CurrentYear 
 const year = document.querySelector("#currentYear")
 year.innerHTML = new Date().getFullYear();
