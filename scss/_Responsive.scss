@@ -134,7 +134,7 @@
         .banner-container {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: repeat(5, 600PX);
+            grid-template-rows: repeat(5, 500PX);
             grid-template-areas:
                 'h h h h h h h h h h h h'
                 'w w w w w w w w w w w w'
@@ -226,6 +226,7 @@
 
     .banner {
         .banner-container {
+            grid-template-rows: repeat(5, 400PX);
             .hexa-left-items {
                 .banner-img {
                     padding-left: 30px;
