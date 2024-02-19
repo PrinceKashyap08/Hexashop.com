@@ -460,6 +460,681 @@ header .navbar .hamburger .line {
 }
 
 /* ------------------ /banner_style ------------------------- */
+/* ------------------ menLatest_style ------------------------- */
+.menLatest {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  width: 100%;
+  height: auto;
+  border-bottom: 3px dotted #eee;
+}
+.menLatest #mens {
+  padding-top: 100px;
+}
+.menLatest .menLatest-title {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  padding-bottom: 50px;
+}
+.menLatest .menLatest-title h2 {
+  font-size: 3.5rem;
+  color: #2a2a2a;
+}
+.menLatest .menLatest-title p {
+  font-size: 1.4rem;
+  color: #a1a1a1;
+}
+.menLatest .menLatest-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+.menLatest .menLatest-container .owl-carousel .menLatest-items:hover .menLatest-img .menLatest-content {
+  bottom: 60px;
+  visibility: visible;
+  opacity: 1;
+}
+.menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img {
+  position: relative;
+}
+.menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img .menLatest-content {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  visibility: hidden;
+  opacity: 0;
+  bottom: 10px;
+  transition: 0.4s;
+}
+.menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img .menLatest-content ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 20px;
+}
+.menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img .menLatest-content ul li {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  cursor: pointer;
+}
+.menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img .menLatest-content ul li i {
+  font-size: 1.4rem;
+  color: #000;
+}
+.menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left h3 {
+  font-size: 2rem;
+  color: #2a2a2a;
+}
+.menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left span {
+  font-size: 1.6rem;
+  color: #a1a1a1;
+}
+.menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-right {
+  padding: 40px 0;
+}
+.menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-right ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: start;
+  gap: 5px;
+}
+.menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-right ul li {
+  font-size: 1rem;
+}
+
+/* ------------------ /menLatest_style ------------------------- */
+/* ------------------ WonmenLatest_style ------------------------- */
+.WomenLatest {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  height: auto;
+  border-bottom: 3px dotted #eee;
+}
+.WomenLatest #mens {
+  padding-top: 100px;
+}
+.WomenLatest .menLatest-title {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  padding-bottom: 50px;
+}
+.WomenLatest .menLatest-title h2 {
+  font-size: 3.5rem;
+  color: #2a2a2a;
+}
+.WomenLatest .menLatest-title p {
+  font-size: 1.4rem;
+  color: #a1a1a1;
+}
+.WomenLatest .menLatest-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+.WomenLatest .menLatest-container .owl-carousel .menLatest-items:hover .menLatest-img .menLatest-content {
+  bottom: 60px;
+  visibility: visible;
+  opacity: 1;
+}
+.WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img {
+  position: relative;
+}
+.WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img .menLatest-content {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  visibility: hidden;
+  opacity: 0;
+  bottom: 10px;
+  transition: 0.4s;
+}
+.WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img .menLatest-content ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 20px;
+}
+.WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img .menLatest-content ul li {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  cursor: pointer;
+}
+.WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img .menLatest-content ul li i {
+  font-size: 1.4rem;
+  color: #000;
+}
+.WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left h3 {
+  font-size: 2rem;
+  color: #2a2a2a;
+}
+.WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left span {
+  font-size: 1.6rem;
+  color: #a1a1a1;
+}
+.WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-right {
+  padding: 40px 0;
+}
+.WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-right ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: start;
+  gap: 5px;
+}
+.WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-right ul li {
+  font-size: 1rem;
+}
+
+/* ------------------ /WomenLatest_style ------------------------- */
+/* ------------------ KidsLatest_style ------------------------- */
+.KidLatest {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  height: auto;
+  border-bottom: 3px dotted #eee;
+}
+.KidLatest #mens {
+  padding-top: 100px;
+}
+.KidLatest .menLatest-title {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.KidLatest .menLatest-title h2 {
+  font-size: 3.5rem;
+  color: #2a2a2a;
+}
+.KidLatest .menLatest-title p {
+  font-size: 1.4rem;
+  color: #a1a1a1;
+}
+.KidLatest .menLatest-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+.KidLatest .menLatest-container .owl-carousel .menLatest-items:hover .menLatest-img .menLatest-content {
+  bottom: 60px;
+  visibility: visible;
+  opacity: 1;
+}
+.KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img {
+  position: relative;
+}
+.KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img .menLatest-content {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  visibility: hidden;
+  opacity: 0;
+  bottom: 10px;
+  transition: 0.4s;
+}
+.KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img .menLatest-content ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 20px;
+}
+.KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img .menLatest-content ul li {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  cursor: pointer;
+}
+.KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-img .menLatest-content ul li i {
+  font-size: 1.4rem;
+  color: #000;
+}
+.KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left h3 {
+  font-size: 2rem;
+  color: #2a2a2a;
+}
+.KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left span {
+  font-size: 1.6rem;
+  color: #a1a1a1;
+}
+.KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-right {
+  padding: 40px 0;
+}
+.KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-right ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: start;
+  gap: 5px;
+}
+.KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-right ul li {
+  font-size: 1rem;
+}
+
+/* ------------------ KidsLatest_style ------------------------- */
+/* ------------------ ExploreProduct_style ------------------------- */
+.ExploreProduct {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  border-bottom: 3px dotted #eee;
+}
+.ExploreProduct .ExploreProduct-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.ExploreProduct .ExploreProduct-container .ExploreProduct-left h2 {
+  font-size: 3.5rem;
+  color: #2a2a2a;
+  padding-bottom: 20px;
+}
+.ExploreProduct .ExploreProduct-container .ExploreProduct-left h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #2a2a2a;
+  padding-bottom: 20px;
+}
+.ExploreProduct .ExploreProduct-container .ExploreProduct-left h3 i {
+  font-size: 3.2rem;
+  padding-right: 10px;
+}
+.ExploreProduct .ExploreProduct-container .ExploreProduct-left p {
+  font-size: 1.5rem;
+  color: #a1a1a1;
+  padding-bottom: 20px;
+}
+.ExploreProduct .ExploreProduct-container .ExploreProduct-left p span {
+  color: #007bff;
+  cursor: pointer;
+}
+.ExploreProduct .ExploreProduct-container .ExploreProduct-left .Explore-btn {
+  margin-top: 10px;
+  padding: 12px 24px;
+  border: 1px solid #111;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.ExploreProduct .ExploreProduct-container .ExploreProduct-left .Explore-btn:hover {
+  color: #F6F6F6;
+  background-color: #000;
+}
+.ExploreProduct .ExploreProduct-container .ExploreProduct-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.ExploreProduct .ExploreProduct-container .ExploreProduct-right .Explore-items .Explore-img {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 5px;
+}
+.ExploreProduct .ExploreProduct-container .ExploreProduct-right .Explore-items .Explore-img img {
+  width: 100%;
+  height: 100%;
+}
+.ExploreProduct .ExploreProduct-container .ExploreProduct-right .Explore-items .Explore-img h3 {
+  font-size: 2.2rem;
+}
+.ExploreProduct .ExploreProduct-container .ExploreProduct-right .Explore-items .Explore-img p {
+  font-size: 1.4rem;
+  color: #a1a1a1;
+}
+
+/* ------------------ /ExploreProduct_style ------------------------- */
+/* ------------------ socialMedia_style ------------------------- */
+.socialMedia {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  border-bottom: 3px dotted #eee;
+}
+.socialMedia .socialMedia-title {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  padding-bottom: 50px;
+}
+.socialMedia .socialMedia-title h2 {
+  font-size: 3.5rem;
+  color: #2a2a2a;
+}
+.socialMedia .socialMedia-title p {
+  font-size: 1.4rem;
+  color: #a1a1a1;
+}
+.socialMedia .socialMedia-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: -ms-flexbox;
+  display: flex;
+}
+.socialMedia .socialMedia-container .social-items {
+  position: relative;
+}
+.socialMedia .socialMedia-container .social-items:hover .social-info {
+  opacity: 1;
+  visibility: visible;
+}
+.socialMedia .socialMedia-container .social-items .social-img img {
+  width: 100%;
+  height: 100%;
+}
+.socialMedia .socialMedia-container .social-items .social-info {
+  position: absolute;
+  top: 0;
+  bottom: 2px;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: end;
+      justify-content: end;
+  padding: 15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.socialMedia .socialMedia-container .social-items .social-info h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+}
+.socialMedia .socialMedia-container .social-items .social-info span {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* ------------------ /socialMedia_style ------------------------- */
+/* ------------------ NewLetter_style ------------------------- */
+.NewLetter {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+}
+.NewLetter .NewLetter-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  gap: 30px;
+}
+.NewLetter .NewLetter-container .NewLetter-left {
+  margin-right: 50px;
+}
+.NewLetter .NewLetter-container .NewLetter-left h2 {
+  font-size: 3.2rem;
+  color: #2a2a2a;
+  padding-bottom: 10px;
+}
+.NewLetter .NewLetter-container .NewLetter-left p {
+  font-size: 1.4rem;
+  color: #a1a1a1;
+}
+.NewLetter .NewLetter-container .NewLetter-left form {
+  display: grid;
+  grid-template-columns: 2fr 2fr 50px;
+  gap: 20px;
+  padding-top: 40px;
+}
+.NewLetter .NewLetter-container .NewLetter-left form input {
+  padding: 12px 15px;
+  color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.NewLetter .NewLetter-container .NewLetter-left form input::-moz-placeholder {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.NewLetter .NewLetter-container .NewLetter-left form input:-ms-input-placeholder {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.NewLetter .NewLetter-container .NewLetter-left form input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.NewLetter .NewLetter-container .NewLetter-left form .NewLetter-btn {
+  color: #fff;
+  font-size: 1.4rem;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.NewLetter .NewLetter-container .NewLetter-left form .NewLetter-btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+.NewLetter .NewLetter-container .NewLetter-items .NewLetter-location {
+  padding-bottom: 30px;
+}
+.NewLetter .NewLetter-container .NewLetter-items .NewLetter-location h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  padding-bottom: 5px;
+}
+.NewLetter .NewLetter-container .NewLetter-items .NewLetter-location p {
+  font-size: 1.4rem;
+  color: #a1a1a1;
+}
+.NewLetter .NewLetter-container .NewLetter-items .NewLetter-phone {
+  padding-bottom: 30px;
+}
+.NewLetter .NewLetter-container .NewLetter-items .NewLetter-phone h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  padding-bottom: 5px;
+}
+.NewLetter .NewLetter-container .NewLetter-items .NewLetter-phone p {
+  font-size: 1.4rem;
+  color: #a1a1a1;
+}
+.NewLetter .NewLetter-container .NewLetter-items .NewLetter-office h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  padding-bottom: 5px;
+}
+.NewLetter .NewLetter-container .NewLetter-items .NewLetter-office p {
+  font-size: 1.4rem;
+  color: #a1a1a1;
+}
+
+/* ------------------ /NewLetter_style ------------------------- */
+/* ------------------ footer_style ------------------------- */
+.footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #2a2a2a;
+}
+.footer .footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 1fr 1fr;
+  gap: 30px;
+}
+.footer .footer-container .footerAbout {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.footer .footer-container .footerAbout img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.footer .footer-container .footerAbout p {
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 7px 0;
+}
+.footer .footer-container .footerLink .footer-title {
+  padding-bottom: 20px;
+}
+.footer .footer-container .footerLink .footer-title h2 {
+  font-size: 1.6rem;
+  color: #fff;
+}
+.footer .footer-container .footerLink .footer-list ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  gap: 10px;
+}
+.footer .footer-container .footerLink .footer-list ul a {
+  font-size: 1.4rem;
+  color: #f8f8f8;
+  transition: all 0.5s ease;
+}
+.footer .footer-container .footerLink .footer-list ul a:hover {
+  color: #a1a1a1;
+}
+.footer .footer-bottom {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+.footer .footer-bottom .foot-bottom-container {
+  border-top: 0.5px solid rgba(250, 247, 247, 0.4);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer .footer-bottom .foot-bottom-container p {
+  font-size: 1.4rem;
+  color: #F6F6F6;
+}
+.footer .footer-bottom .foot-bottom-container ul {
+  padding-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  gap: 30px;
+}
+.footer .footer-bottom .foot-bottom-container ul li {
+  font-size: 2rem;
+  color: #cff;
+  transition: 0.3s;
+}
+.footer .footer-bottom .foot-bottom-container ul li:hover {
+  color: brown;
+}
+
+/* ------------------ /footer_style ------------------------- */
 /* -------------------- /Max-width:1208px ---------------------- */
 @media (max-width: 1200px) {
   .banner .banner-container {
@@ -539,6 +1214,14 @@ header .navbar .hamburger .line {
   #show-menu:checked ~ .mobile-menu i {
     content: "\f106";
   }
+  .NewLetter .NewLetter-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 /* -------------------- /Max-width:992px ---------------------- */
 /* -------------------- /Max-width:768px ---------------------- */
@@ -564,6 +1247,56 @@ header .navbar .hamburger .line {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 400PX);
     grid-template-areas: "h h h h h h h h h h h h" "w w w w w w w w w w w w" "m m m m m m m m m m m m" "K K K K K K K K K K K K" "A A A A A A A A A A A A";
+  }
+  .menLatest .menLatest-title {
+    padding: 0 20px;
+    padding-bottom: 50px;
+  }
+  .menLatest .menLatest-container {
+    padding: 0 20px;
+  }
+  .WomenLatest .menLatest-title {
+    padding: 0 20px;
+    padding-bottom: 50px;
+  }
+  .WomenLatest .menLatest-container {
+    padding: 0 20px;
+  }
+  .KidLatest .menLatest-title {
+    padding: 0 20px;
+    padding-bottom: 50px;
+  }
+  .KidLatest .menLatest-container {
+    padding: 0 20px;
+  }
+  .ExploreProduct {
+    padding: 75px 0;
+  }
+  .ExploreProduct .ExploreProduct-container {
+    padding: 0 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .socialMedia {
+    padding: 75px 0;
+  }
+  .socialMedia .socialMedia-title {
+    padding: 0 20px;
+    padding-bottom: 50px;
+  }
+  .socialMedia .socialMedia-container {
+    padding: 0 20px;
+  }
+  .NewLetter .NewLetter-container {
+    padding: 0 20px;
+  }
+  .footer .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    padding: 0 20px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 /* -------------------- /Max-width:768px ---------------------- */
@@ -645,6 +1378,155 @@ header .navbar .hamburger .line {
     font-size: 2rem;
   }
   .banner .banner-container .Accessories-right-items .banner-img .banner-overlay p {
+    font-size: 1.4rem;
+  }
+  .menLatest .menLatest-title {
+    padding: 0 12px;
+    padding-bottom: 50px;
+  }
+  .menLatest .menLatest-title h2 {
+    font-size: 3rem;
+  }
+  .menLatest .menLatest-title p {
+    font-size: 1.4rem;
+  }
+  .menLatest .menLatest-container {
+    padding: 0 12px;
+  }
+  .menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left h3 {
+    font-size: 1.8rem;
+  }
+  .menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left span {
+    font-size: 1.4rem;
+  }
+  .WomenLatest .menLatest-title {
+    padding: 0 12px;
+    padding-bottom: 50px;
+  }
+  .WomenLatest .menLatest-title h2 {
+    font-size: 3rem;
+  }
+  .WomenLatest .menLatest-title p {
+    font-size: 1.4rem;
+  }
+  .WomenLatest .menLatest-container {
+    padding: 0 12px;
+  }
+  .WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left h3 {
+    font-size: 1.8rem;
+  }
+  .WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left span {
+    font-size: 1.4rem;
+  }
+  .KidLatest .menLatest-title {
+    padding: 0 12px;
+    padding-bottom: 50px;
+  }
+  .KidLatest .menLatest-title h2 {
+    font-size: 3rem;
+  }
+  .KidLatest .menLatest-title p {
+    font-size: 1.4rem;
+  }
+  .KidLatest .menLatest-container {
+    padding: 0 12px;
+  }
+  .KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left h3 {
+    font-size: 1.8rem;
+  }
+  .KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left span {
+    font-size: 1.4rem;
+  }
+  .ExploreProduct {
+    padding: 75px 0;
+  }
+  .ExploreProduct .ExploreProduct-container {
+    padding: 0 12px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-left h2 {
+    font-size: 3rem;
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-left h3 {
+    font-size: 1.4rem;
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-left p {
+    font-size: 1.4rem;
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-right {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-right .Explore-items .Explore-img {
+    height: 500px;
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-right .Explore-items .Explore-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-right .Explore-items .Explore-img h3 {
+    font-size: 2rem;
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-right .Explore-items .Explore-img p {
+    font-size: 1.4rem;
+  }
+  .socialMedia {
+    padding: 75px 0;
+  }
+  .socialMedia .socialMedia-title {
+    padding: 0 12px;
+    padding-bottom: 50px;
+  }
+  .socialMedia .socialMedia-title h2 {
+    font-size: 3rem;
+  }
+  .socialMedia .socialMedia-title p {
+    font-size: 1.4rem;
+  }
+  .socialMedia .socialMedia-container {
+    padding: 0 12px;
+  }
+  .NewLetter .NewLetter-container {
+    padding: 0 12px;
+  }
+  .NewLetter .NewLetter-container .NewLetter-left {
+    margin-right: 0px;
+  }
+  .NewLetter .NewLetter-container .NewLetter-left h2 {
+    font-size: 2.8rem;
+  }
+  .NewLetter .NewLetter-container .NewLetter-left p {
+    font-size: 1.4rem;
+  }
+  .NewLetter .NewLetter-container .NewLetter-left form {
+    grid-template-columns: 1fr;
+  }
+  .NewLetter .NewLetter-container .NewLetter-left form .NewLetter-btn {
+    width: 55px;
+    height: 45px;
+    display: block;
+  }
+  .footer .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    padding: 0 12px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    grid-template-columns: 1fr;
+  }
+  .footer .footer-container .footerAbout {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .footer .footer-container .footerAbout img {
+    width: 170px;
+  }
+  .footer .footer-container .footerLink .footer-title h2 {
+    font-size: 1.5rem;
+  }
+  .footer .footer-container .footerLink .footer-list ul a {
     font-size: 1.4rem;
   }
 }
@@ -729,6 +1611,182 @@ header .navbar .hamburger .line {
   }
   .banner .banner-container .Accessories-right-items .banner-img .banner-overlay p {
     font-size: 1.2rem;
+  }
+  .menLatest .menLatest-title {
+    padding: 0 12px;
+    padding-bottom: 50px;
+  }
+  .menLatest .menLatest-title h2 {
+    font-size: 2.5rem;
+  }
+  .menLatest .menLatest-title p {
+    font-size: 1.2rem;
+  }
+  .menLatest .menLatest-container {
+    padding: 0 12px;
+  }
+  .menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left h3 {
+    font-size: 1.6rem;
+  }
+  .menLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left span {
+    font-size: 1.2rem;
+  }
+  .WomenLatest .menLatest-title {
+    padding: 0 12px;
+    padding-bottom: 50px;
+  }
+  .WomenLatest .menLatest-title h2 {
+    font-size: 2.5rem;
+  }
+  .WomenLatest .menLatest-title p {
+    font-size: 1.2rem;
+  }
+  .WomenLatest .menLatest-container {
+    padding: 0 12px;
+  }
+  .WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left h3 {
+    font-size: 1.6rem;
+  }
+  .WomenLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left span {
+    font-size: 1.2rem;
+  }
+  .KidLatest .menLatest-title {
+    padding: 0 12px;
+    padding-bottom: 50px;
+  }
+  .KidLatest .menLatest-title h2 {
+    font-size: 2.5rem;
+  }
+  .KidLatest .menLatest-title p {
+    font-size: 1.2rem;
+  }
+  .KidLatest .menLatest-container {
+    padding: 0 12px;
+  }
+  .KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left h3 {
+    font-size: 1.6rem;
+  }
+  .KidLatest .menLatest-container .owl-carousel .menLatest-items .menLatest-info .menLatest-left span {
+    font-size: 1.2rem;
+  }
+  .ExploreProduct {
+    padding: 75px 0;
+  }
+  .ExploreProduct .ExploreProduct-container {
+    padding: 0 12px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-left h2 {
+    font-size: 2.5rem;
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-left h3 {
+    font-size: 1.2rem;
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-left p {
+    font-size: 1.2rem;
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-right {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-right .Explore-items .Explore-img {
+    height: 500px;
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-right .Explore-items .Explore-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-right .Explore-items .Explore-img h3 {
+    font-size: 1.8rem;
+  }
+  .ExploreProduct .ExploreProduct-container .ExploreProduct-right .Explore-items .Explore-img p {
+    font-size: 1.2rem;
+  }
+  .socialMedia {
+    padding: 75px 0;
+  }
+  .socialMedia .socialMedia-title {
+    padding: 0 12px;
+    padding-bottom: 50px;
+  }
+  .socialMedia .socialMedia-title h2 {
+    font-size: 2.5rem;
+  }
+  .socialMedia .socialMedia-title p {
+    font-size: 1.2rem;
+  }
+  .socialMedia .socialMedia-container {
+    padding: 0 12px;
+  }
+  .NewLetter .NewLetter-container {
+    padding: 0 12px;
+  }
+  .NewLetter .NewLetter-container .NewLetter-left {
+    margin-right: 0px;
+  }
+  .NewLetter .NewLetter-container .NewLetter-left h2 {
+    font-size: 2.5rem;
+  }
+  .NewLetter .NewLetter-container .NewLetter-left p {
+    font-size: 1.2rem;
+  }
+  .NewLetter .NewLetter-container .NewLetter-items .NewLetter-location {
+    padding-bottom: 30px;
+  }
+  .NewLetter .NewLetter-container .NewLetter-items .NewLetter-location h3 {
+    font-size: 1.4rem;
+  }
+  .NewLetter .NewLetter-container .NewLetter-items .NewLetter-location p {
+    font-size: 1.2rem;
+  }
+  .NewLetter .NewLetter-container .NewLetter-items .NewLetter-phone {
+    padding-bottom: 30px;
+  }
+  .NewLetter .NewLetter-container .NewLetter-items .NewLetter-phone h3 {
+    font-size: 1.4rem;
+  }
+  .NewLetter .NewLetter-container .NewLetter-items .NewLetter-phone p {
+    font-size: 1.2rem;
+  }
+  .NewLetter .NewLetter-container .NewLetter-items .NewLetter-office h3 {
+    font-size: 1.4rem;
+  }
+  .NewLetter .NewLetter-container .NewLetter-items .NewLetter-office p {
+    font-size: 1.2rem;
+  }
+  .footer .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+    padding: 0 12px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  .footer .footer-container .footerAbout {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .footer .footer-container .footerAbout img {
+    width: 160px;
+  }
+  .footer .footer-container .footerAbout p {
+    font-size: 1.2rem;
+  }
+  .footer .footer-container .footerLink .footer-title h2 {
+    font-size: 1.4rem;
+  }
+  .footer .footer-container .footerLink .footer-list ul a {
+    font-size: 1.2rem;
+  }
+  .footer .footer-bottom {
+    padding: 0 12px;
+  }
+  .footer .footer-bottom .foot-bottom-container p {
+    font-size: 1.2rem;
+  }
+  .footer .footer-bottom .foot-bottom-container ul li {
+    font-size: 1.6rem;
   }
 }
 /* -------------------- /Max-width:378px ---------------------- *//*# sourceMappingURL=main.css.map */

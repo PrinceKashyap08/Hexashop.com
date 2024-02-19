@@ -29,3 +29,64 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 };
+
+// menLatest 
+$('#mens .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: false,
+    dots: false,
+    autoplayTimeout:5000,
+    autoplay: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+});
+// womenLatest 
+$('#womens .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: false,
+    dots: false,
+    autoplayTimeout:5000,
+    autoplay: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+});
+// KidsLatest 
+$('#Kids .owl-carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: false,
+    dots: false,
+    autoplayTimeout:5000,
+    autoplay: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    }
+});
